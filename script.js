@@ -1,9 +1,9 @@
 function min(arr) {
-
+return 0
 }
 
 function max(arr) {
-
+return 00
 }
 
 function mean(arr) {
