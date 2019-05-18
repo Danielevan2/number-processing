@@ -1,20 +1,38 @@
 function min(arr) {
-return 0
+return arr.sort () [0]
 }
 
 function max(arr) {
-return 00
+return arr.sort () [0]
 }
 
 function mean(arr) {
+  var total = 0
+  for (var i = 0; i < arr.length; i++) {
+    total += arr[i]
+  }
+  return total /= arr.length
+
 
 }
-
 function odds(arr) {
-
+  var result = []
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+     result.push(arr[i])
+    }}
+    return result
+  
 }
 
 function evens(arr) {
+  var result = []
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+     result.push(arr[i])
+    }}
+    return result
+  
 
 }
 
@@ -23,4 +41,4 @@ function numberProcessing(arr) {
 }
 
 console.log(numberProcessing([1, 3, 5, 1, 2, 8, 10, 0, 3]))
-// "Min: 0, Max: 10, Mean: 4, Odds: 1-3-5-1-3, Evens: 2-8-10-0"
+// "Min: 0, Max: 10, Mean: 4, Odds: 1-3-5-1-3, Evens: 2-8-10-0
